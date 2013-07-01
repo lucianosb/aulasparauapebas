@@ -74,17 +74,17 @@
 <p>A tag de links é uma das mais básicas da internet e representada pela letra <strong>a</strong> de "âncora". Seu principal parâmetro é o <strong>href</strong> que indica para qual endereço a pessoa irá após clicar no link.</p>
 
 <pre><code>
-<a href="google.com">
+&lt;a href="google.com"&gt;
   
   google.com
   
-</a>
+&lt;/a&gt;
 </code></pre>
 
 <p>Observe que o espaçamento de linhas usados no exemplo acima não é obrigatório, escrevemos desse jeito apenas para facilitar a leitura. Poderíamos escrever tudo em uma linha só.</p>
 
 <pre><code>
-<a href="google.com">google.com</a>
+&lt;a href="google.com"&gt;google.com&lt;/a&gt;
 </code></pre>
 
 <p>A quebra de linha no código, portanto, não representa a quebra de linha no resultado final. Para isso, usamos a tag de parágrafo.</p>
@@ -94,8 +94,8 @@
 <p>Para formar um parágrafo precisamos indicar seu início e fim no código html através da tag <strong>p</strong>.</p>
 
 <pre><code>
-<p>Um Paragrafo</p>
-<p>Outro paragrafo contendo <a href="#">um link</a>.</p>
+&lt;p&gt;Um Paragrafo&lt;/p&gt;
+&lt;p&gt;Outro paragrafo contendo &lt;a href="#"&gt;um link&lt;/a&gt;.&lt;/p&gt;
 </code></pre>
 
 <p>Note no exemplo acima que um elemento HTML pode ter outros elementos dentro de si.</p>
@@ -105,7 +105,7 @@
 <p>Esta é uma exceção a regra porque não precisa de indicação de fechamento.</p>
 
 <pre><code>
-<img src="ENDERECO-DA-IMAGEM" />
+&lt;img src="ENDERECO-DA-IMAGEM" /&gt;
 </code></pre>
 
 <p>A tag <strong>img</strong> irá produzir uma imagem bastando para isso que se indique uma fonte (source, abreviado como src) de onde está a imagem na internet através do parâmetro <strong>src</strong>.</p>
@@ -117,11 +117,11 @@
 <p>Com base no que aprendemos podemos transformar uma imagem em um link, fazendo assim um banner.</p>
 
 <pre><code>
-<a href="google.com" target="_blank.">
+&lt;a href="google.com" target="_blank."&gt;
   
-  <img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" />
+  &lt;img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" /&gt;
   
-</a>
+&lt;/a&gt;
 </code></pre>
 
 <p>O código acima produziria o seguinte resultado: Uma imagem de 150 pixels de largura que ao clicada direciona o usuário para o site google.com abrindo uma nova janela no navegador.</p>
@@ -129,7 +129,7 @@
 <p>
 <a href="google.com" target="_blank.">
   
-  <img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" />
+  &lt;img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" /&gt;
   
 </a>  
 </p>
