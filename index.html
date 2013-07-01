@@ -23,9 +23,11 @@
         </header>
 
         <section id="downloads" class="clearfix">
+          <!--
           <a href="https://github.com/lucianosb/aulasparauapebas/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
           <a href="https://github.com/lucianosb/aulasparauapebas/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
           <a href="https://github.com/lucianosb/aulasparauapebas" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          -->
         </section>
 
         <hr>
@@ -52,36 +54,104 @@
 <hr>
 
           <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+              Aula 02
+  
+          </h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Na aula 02 aprendemos um básico de HTML (Hyper Text Markup Language) usando para exercício prático o endereço <a src="http://html.lucianosb.com.br" target="_blank">html.lucianosb.com.br</a>. Aprendemos como funcionam as estruturas de links, imagens, paragráfos e outros códigos. Vamos a breve revisão.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>O HTML é formado por uma simples estrutura de marcação que determina os diferentes objetos de uma página da internet. Estas marcação são chamadas de tags e sua estrtura segue quase sempre o seguinte formato:</p>
+
+
+<pre><code>
+<tag parametro="valor"> CONTEUDO </tag>
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Todo objeto HTML é chamado de <strong>tag</strong> e cada tag pode receber parametros que as fazem ter ações especiais. A tag de link é um desses exemplos como vemos abaixo.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h4>Tag de links</h4>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>A tag de links é uma das mais básicas da internet e representada pela letra <strong>a</strong> de "âncora". Seu principal parâmetro é o <strong>href</strong> que indica para qual endereço a pessoa irá após clicar no link.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<pre><code>
+<a href="google.com">
+  
+  google.com
+  
+</a>
+</code></pre>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Observe que o espaçamento de linhas usados no exemplo acima não é obrigatório, escrevemos desse jeito apenas para facilitar a leitura. Poderíamos escrever tudo em uma linha só.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<pre><code>
+<a href="google.com">google.com</a>
+</code></pre>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>A quebra de linha no código, portanto, não representa a quebra de linha no resultado final. Para isso, usamos a tag de parágrafo.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h4>Tag de paragrafo</h4>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Para formar um parágrafo precisamos indicar seu início e fim no código html através da tag <strong>p</strong>.</p>
+
+<pre><code>
+<p>Um Paragrafo</p>
+<p>Outro paragrafo contendo <a href="#">um link</a>.</p>
+</code></pre>
+
+<p>Note no exemplo acima que um elemento HTML pode ter outros elementos dentro de si.</p>
+
+<h4>Tag de Imagem</h4>
+
+<p>Esta é uma exceção a regra porque não precisa de indicação de fechamento.</p>
+
+<pre><code>
+<img src="ENDERECO-DA-IMAGEM" />
+</code></pre>
+
+<p>A tag <strong>img</strong> irá produzir uma imagem bastando para isso que se indique uma fonte (source, abreviado como src) de onde está a imagem na internet através do parâmetro <strong>src</strong>.</p>
+
+<p>Podem ser exibidas como imagem nessa tag os principais formatos de imagem: jpeg, jpg, gif, png.</p>
+
+<h4>Formando um banner</h4>
+
+<p>Com base no que aprendemos podemos transformar uma imagem em um link, fazendo assim um banner.</p>
+
+<pre><code>
+<a href="google.com" target="_blank.">
+  
+  <img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" />
+  
+</a>
+</code></pre>
+
+<p>O código acima produziria o seguinte resultado: Uma imagem de 150 pixels de largura que ao clicada direciona o usuário para o site google.com abrindo uma nova janela no navegador.</p>
+
+<p>
+<a href="google.com" target="_blank.">
+  
+  <img src="http://timenerdworld.files.wordpress.com/2013/01/wpid-photo-jan-14-2013-1115-am.jpg" width="150" />
+  
+</a>  
+</p>
+
+<h4>Links Relacionados</h4>
+
+<ul>
+  <li>html.lucianosb.com.br</li>
+  <li>W3schools</li>
+  <li></li>
+</ul>
+
+<hr>
+
+<h3>Aula 03 - Sistemas de Mapeamento</h3>
+
+<h3>Aula 04 - Configurando um servidor com WordPress</h3>
+
+<h3>Aula 05 - Instalando um Mapa de Vistas</h3>
+
+<h3>Aula 06 - Publicando conteúdo no Mapa de Vistas</h3>
+
         </section>
 
         <footer>
